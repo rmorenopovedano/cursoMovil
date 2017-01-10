@@ -1,0 +1,128 @@
+body {
+background: darkred;
+}
+
+body.claro {
+    -webkit-animation: claro 1s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes claro {
+    0% {
+        background: darkred;
+    }
+    100% {
+        background: palevioletred;
+    }
+}
+
+body.oscuro {
+    -webkit-animation: oscuro 1s 1;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes oscuro {
+    0% {
+        background: palevioletred;
+    }
+    100% {
+        background: darkred;
+    }
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 30px;
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+}
+
+#zona-gestos {
+    width: 100%;
+    background: red;
+    margin-top: 10px;
+    min-height: 300px;
+    display: block;
+}
+
+#info {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+}
+#zona-gestos.tap {
+    -webkit-animation: tap 2s 1;
+}
+
+#zona-gestos.doubletap {
+    -webkit-animation: pulsacion 1s 1;
+}
+
+#zona-gestos.press {
+    -webkit-animation: presion 1s 1;
+}
+
+#zona-gestos.swipe-derecha {
+    -webkit-animation: swipe-derecha 1s 1;
+}
+
+#zona-gestos.swipe-izquierda {
+    -webkit-animation: swipe-izquierda 1s 1;
+}
+
+#zona-gestos.rotate {
+    -webkit-animation: rotate 1s 1;
+}
+@-webkit-keyframes tap {
+    0%, 100% {
+        background: red;
+    }
+    50% {
+        background: yellow;
+    }
+}
+
+@-webkit-keyframes presion {
+    0%, 100% {
+        background: red;
+    }
+    50% {
+        background: orange;
+    }
+}
+
+@-webkit-keyframes pulsacion {
+    0%, 100% {
+        background: red;
+    }
+    50% {
+        background: coral;
+    }
+}
+
+@-webkit-keyframes swipe-izquierda {
+    0%, 100% {
+        width: 100%;
+    }
+    50% {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes swipe-derecha {
+    0%, 100% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
