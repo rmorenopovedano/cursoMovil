@@ -38,6 +38,8 @@ var app = {
             destinationType: Camera.DestinationType.FILE_URI,
             targetWidth: 300,
             targetHeight: 300,
+            saveToPhotoAlbum: true,
+            cameraDirection: Camera.Direction.FRONT,
             correctOrientation: true
         };
         navigator.camera.getPicture(app.fotoCargada, app.errorAlCargarFoto, opciones);
