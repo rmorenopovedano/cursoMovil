@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/notes.css">
+        <title>App Notas</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Aplicación de Notas</h1>
+        </div>
+        <div class="notes-list-container">
+            <div class="notes-list" id="notes-list">
+                <div class="note-item">Comprar pan</div>
+                <div class="note-item">Revisión coche</div>
+            </div>
+            <button class="anadir" id="anadir">Añadir</button>
+        </div>
+
+        <div class="note-editor" id="note-editor">
+            <input class="titulo" type="text" id="titulo" name="titulo" placeholder="Título" required>
+            <br>
+            <textarea class="comentario" id="comentario" placeholder="Añadir comentario" name="comentario"></textarea>
+            <br>
+            <button class="salvar" id="salvar">Salvar</button>
+        </div>
+        <footer class="footer">
+            <h4>Creando Apps. Aprende a programar aplicaciones móviles</h4>
+        </footer>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/firebase.js"></script>
+        <script type="text/javascript" src="js/notes.js"></script>
+    </body>
+</html>
