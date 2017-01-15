@@ -1,1 +1,1 @@
-# cursoMovil
+# acelerometroMovil
